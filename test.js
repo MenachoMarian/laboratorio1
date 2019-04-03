@@ -26,7 +26,7 @@ fs.readdir("./solutions", (err, files) => {
     if (file === "addTwoDigits.js") {
       var f = require("./solutions/" + file);
       var fs = require('fs');
-      fs.readFile('./inputs/addTwoDigits.txt', function (err, data) {
+      fs.readFile('./inputs/addTwoDigits.txt', function(err, data) {
         if (err) {
           throw err;
         }
@@ -43,7 +43,7 @@ fs.readdir("./solutions", (err, files) => {
     if (file === "candies.js") {
       var f = require("./solutions/" + file);
       var fs = require('fs');
-      fs.readFile('./inputs/candies.txt', function (err, data) {
+      fs.readFile('./inputs/candies.txt', function(err, data) {
         if (err) {
           throw err;
         }
@@ -54,7 +54,7 @@ fs.readdir("./solutions", (err, files) => {
     if (file === "adjacentElementsProduct.js") {
       var f = require("./solutions/" + file);
       var fs = require('fs');
-      fs.readFile('./inputs/adjacentElementsProduct.txt', function (err, data) {
+      fs.readFile('./inputs/adjacentElementsProduct.txt', function(err, data) {
         if (err) {
           throw err;
         }
@@ -95,8 +95,11 @@ function checkSolution (fn, inputs, fileouput) {
     }
   }
 
-  fs.readFile("./output/" + fileouput, function (err, data) {
+  fs.readFile("./output/" + fileouput, function(err, data) {
     console.log(clc.yellow("Review") + " " + clc.cyan(fileouput));
+    if(data != undefined) {
+
+
     var outdata = data.toString().split(/\n/);
     var sol = 0;
     for (var i = 0; i < posiblesolutions.length; i ++) {
@@ -112,6 +115,8 @@ function checkSolution (fn, inputs, fileouput) {
       console.log(clc.green(fileouput + " " + "Correcto"))
     } else {
       console.log(clc.red(fileouput + " " + "Incorrecto"))
+    }
+
     }
   });
 }
