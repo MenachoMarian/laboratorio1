@@ -12,5 +12,10 @@ function adjacentElementsProduct(v){
   return major;
 }
 var inputArray = [3, 6, -2, -5, 7, 3];
+<<<<<<< HEAD
 //console.log(adjacentElementsProduct(inputArray));
 module.exports=adjacentElementsProduct
+=======
+console.log(adjacentElementsProduct(inputArray));
+//module.exports=adjacentElementsProduct
+>>>>>>> brendaexperimenta

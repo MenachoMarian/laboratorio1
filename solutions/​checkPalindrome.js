@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 function ​checkPalindrome(w){
+=======
+function ​sum(w){
+>>>>>>> brendaexperimenta
   var count=w.length;
   var wordinverted;
   var result="";
@@ -19,6 +23,12 @@ function ​checkPalindrome(w){
   return result;
 }
 
+<<<<<<< HEAD
 module.exports=checkPalindrome
 //var inputString = "aabaa";
 //console.log(checkPalindrome(inputString));
+=======
+//module.exports=checkPalindrome
+var inputString = "aabaa";
+console.log(checkPalindrome(inputString));
+>>>>>>> brendaexperimenta
