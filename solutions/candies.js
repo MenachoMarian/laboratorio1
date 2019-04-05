@@ -1,13 +1,13 @@
 function candies(n,m) {
   var r = 0;
 //  var candy = 0;
-    if (m>n) {
+    if (m>=n) {
       r = m/n;
-       parceInt(r);
+       r= parseInt(r);
 
       return r;
     }
 }
 
 //module.exports = candies
-console.log(candies(3,10));
+console.log(candies(3,));
