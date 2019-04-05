@@ -8,4 +8,4 @@ function addTwoDigits(n){
 }
 var n=29;
 console.log("la suma de los dìgitos es:"+" "+ addTwoDigits(n))
-module.exports = addTwoDigits
+//module.exports = addTwoDigits
