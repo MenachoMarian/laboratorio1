@@ -1,9 +1,9 @@
 function candies(n,m) {
-  var r = 0;
+  var resp = 0;
     if (m>=n) {
-      r = m/n;
-       r= parseInt(r);
-      return r;
+      resp = m/n;
+       resp= parseInt(resp);
+      return rest;
     }else
     document.write('dulces insuficientes');
 }
