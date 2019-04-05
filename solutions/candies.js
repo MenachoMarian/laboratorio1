@@ -3,7 +3,7 @@ function candies(n,m) {
     if (m>=n) {
       resp = m/n;
        resp= parseInt(resp);
-      return rest;
+      return resp;
     }else
     document.write('dulces insuficientes');
 }
