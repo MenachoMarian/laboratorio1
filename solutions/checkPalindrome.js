@@ -17,5 +17,5 @@ function checkPalindrome(cadena){
 }
 
 var inputString="a";
-console.log(checkPalindrome(inputString));
-//module.exports=checkPalindrome
+//console.log(checkPalindrome(inputString));
+module.exports=checkPalindrome
