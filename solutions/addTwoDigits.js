@@ -7,5 +7,5 @@ function addTwoDigits(n){
   return sum;
 }
 var n=29;
-console.log("la suma de los dìgitos es:"+" "+ addTwoDigits(n))
-//module.exports = addTwoDigits
+//console.log("la suma de los dìgitos es:"+" "+ addTwoDigits(n))
+module.exports = addTwoDigits
