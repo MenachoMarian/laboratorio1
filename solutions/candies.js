@@ -4,9 +4,10 @@ function candies(n,m) {
       resp = Math.trunc(m/n);
        //resp= parseInt(resp);
       return resp*n;
-    }else
+    }
+   else
   {
-    return "dulces insuficientes";
+    return resp;
   }
 }
 
