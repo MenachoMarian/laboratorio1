@@ -1,11 +1,21 @@
 function checkPalindrome(cadena){
-  for(i=0; i<cadena.length/2; i++){
-    if(cadena[i] != cadena[cadena.length-1-i]){
-      return false;
-    }
+  var count = cadena.length;
+  var nuevap="";
+
+  while(count>-1){
+    nuevap = nuevap + cadena.charAt(count);
+    count--;
   }
-  return true;
+  if(nuevap===cadena)
+  {
+    return "true";
+  }
+  else{
+    return "false";
+  }
+  //return nuevap;
 }
+
 var inputString="a";
-console.log("checkPalindrome="+" "+ checkPalindrome(inputString))
-//module.exports = checkPalindrome
+console.log(checkPalindrome(inputString));
+//module.exports=checkPalindrome
